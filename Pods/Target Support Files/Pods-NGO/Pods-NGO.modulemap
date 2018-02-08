@@ -1,0 +1,6 @@
+framework module Pods_NGO {
+  umbrella header "Pods-NGO-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="177" id="KGk-i7-Jjw" customClass="RestoTVC" customModule="NGO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="177"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="176.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9xj-Ln-9hn">
+                        <rect key="frame" x="7" y="7" width="306" height="162.5"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="aEi-4z-9FP">
+                        <rect key="frame" x="7" y="112.5" width="306" height="57"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="57" id="rzV-J8-qsY">
+                                <variation key="heightClass=regular-widthClass=regular" constant="114"/>
+                            </constraint>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Jb-A8-Qpo">
+                        <rect key="frame" x="18" y="120" width="208" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="83x-qu-s9f">
+                                <variation key="heightClass=regular-widthClass=regular" constant="42"/>
+                            </constraint>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.66669379340277779" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="rc1-4I-z47">
+                        <rect key="frame" x="19" y="147.5" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="DSA-iR-99F">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstAttribute="height" constant="10" id="DyP-eA-Bv2">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYf-15-2YL">
+                        <rect key="frame" x="43" y="141.5" width="247" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="aiY-mT-OIU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9xj-Ln-9hn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="CMC-bN-aN0">
+                        <variation key="heightClass=regular-widthClass=regular" constant="14"/>
+                    </constraint>
+                    <constraint firstItem="aEi-4z-9FP" firstAttribute="leading" secondItem="9xj-Ln-9hn" secondAttribute="leading" id="CMd-lP-jdj">
+                        <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                    </constraint>
+                    <constraint firstItem="uYf-15-2YL" firstAttribute="top" secondItem="3Jb-A8-Qpo" secondAttribute="bottom" constant="0.5" id="JGb-AZ-vAU">
+                        <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                    </constraint>
+                    <constraint firstAttribute="trailing" secondItem="9xj-Ln-9hn" secondAttribute="trailing" constant="7" id="Ple-FT-pmy">
+                        <variation key="heightClass=regular-widthClass=regular" constant="14"/>
+                    </constraint>
+                    <constraint firstItem="rc1-4I-z47" firstAttribute="top" secondItem="3Jb-A8-Qpo" secondAttribute="bottom" constant="6.5" id="QD9-4l-K6E">
+                        <variation key="heightClass=regular-widthClass=regular" constant="17"/>
+                    </constraint>
+                    <constraint firstAttribute="bottom" secondItem="9xj-Ln-9hn" secondAttribute="bottom" constant="7" id="UhU-zV-b21">
+                        <variation key="heightClass=regular-widthClass=regular" constant="14"/>
+                    </constraint>
+                    <constraint firstAttribute="trailingMargin" secondItem="uYf-15-2YL" secondAttribute="trailing" constant="14" id="Yx2-Rh-34H"/>
+                    <constraint firstItem="aEi-4z-9FP" firstAttribute="bottom" secondItem="3Jb-A8-Qpo" secondAttribute="bottom" constant="28.5" id="eqd-q3-drY">
+                        <variation key="heightClass=regular-widthClass=regular" constant="65"/>
+                    </constraint>
+                    <constraint firstItem="3Jb-A8-Qpo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="gyj-gh-vxo">
+                        <variation key="heightClass=regular-widthClass=regular" constant="18"/>
+                    </constraint>
+                    <constraint firstItem="9xj-Ln-9hn" firstAttribute="bottom" secondItem="aEi-4z-9FP" secondAttribute="bottom" id="k8T-5P-oDv">
+                        <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                    </constraint>
+                    <constraint firstItem="uYf-15-2YL" firstAttribute="leading" secondItem="rc1-4I-z47" secondAttribute="trailing" constant="14" id="keo-gW-XmS"/>
+                    <constraint firstItem="9xj-Ln-9hn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="qwQ-IE-ACp">
+                        <variation key="heightClass=regular-widthClass=regular" constant="14"/>
+                    </constraint>
+                    <constraint firstItem="rc1-4I-z47" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="3" id="rIb-un-0P5">
+                        <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                    </constraint>
+                    <constraint firstItem="9xj-Ln-9hn" firstAttribute="trailing" secondItem="aEi-4z-9FP" secondAttribute="trailing" id="uIK-YE-rSh">
+                        <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                    </constraint>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgName" destination="9xj-Ln-9hn" id="img-jI-36a"/>
+                <outlet property="lblHint" destination="uYf-15-2YL" id="1mB-uR-O3m"/>
+                <outlet property="lblName" destination="3Jb-A8-Qpo" id="Sf3-EU-93n"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="118.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic-heart.png" width="45" height="40"/>
+        <image name="shadow.png" width="965" height="159"/>
+    </resources>
+</document>
